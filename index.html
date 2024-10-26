@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML/CSS/JavaScript Quiz</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <button id="darkModeToggle">Toggle Dark Mode</button>
   <h1>Come test your Frontend knowledge!! </h1>
   <form id="quizForm">
     <h2>HTML Questions</h2>
@@ -205,6 +207,19 @@
       <textarea id="debugCode2">const name = 'Marshall' console.log('Hello, ' + name)</textarea>
       <button type="button" onclick="checkDebug(2)">Check</button>
       <p id="debugResult2"></p>
+    </div>
+
+    <div class="question">
+      <h3>User Story:</h3>
+      <p><strong>As a user, I want to create a responsive webpage that displays my favorite movies with images, descriptions, and links to trailers so that I can easily share my recommendations.</strong></p>
+      <h3>Acceptance Criteria:</h3>
+      <ol>
+        <ul>
+          <li>Use a responsive layout that adjusts for both mobile and desktop screens.</li>
+          <li>Each movie has an image, a brief description, and a clickable link to watch the trailer.</li>
+          <li>Use only HTML, CSS, and little JavaScript for interactivity, such as toggling the description.</li>
+        </ul>
+      </ol>
     </div>
 
     <button type="button" id="submitButton" onclick="submitQuiz()">Submit Quiz</button>
