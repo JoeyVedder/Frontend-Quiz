@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <h1>Come test your Frontend knowledge!!</h1>
+  <h1>Come test your Frontend knowledge!! </h1>
   <form id="quizForm">
     <h2>HTML Questions</h2>
     <div class="question">
@@ -207,10 +207,17 @@
       <p id="debugResult2"></p>
     </div>
 
-    <button type="button" onclick="submitQuiz()">Submit Quiz</button>
-  </form>
-  <div id="result"></div>
+    <button type="button" id="submitButton" onclick="submitQuiz()">Submit Quiz</button>
+</form>
+<div id="result"></div>
+<script src="quiz.js"></script>
 
-  <script src="quiz.js"></script>
+  <footer>
+    <h4>
+        <p>
+            <b>This quiz was created by Joey Vedder. If you're interested in looking at his other work, you can click <a href="https://github.com/JoeyVedder" target="_blank">this link</a>.</b>
+        </p>
+            </h4>
+  </footer>
 </body>
 </html>
