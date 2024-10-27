@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML/CSS/JavaScript Quiz</title>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -180,7 +179,7 @@
     <div class="question">
       <p>21. What is the output of the following JavaScript code?</p>
       <pre>console.log(2 + "2");</pre>
-      <label><input type="radio" name="q21" value="A"> 22</label>
+      <label><input type="radio" name="q21" value="A"> 22</label> <!--Correct-->
       <label><input type="radio" name="q21" value="B"> 4</label>
       <label><input type="radio" name="q21" value="C"> undefined</label>
       <label><input type="radio" name="q21" value="D"> NaN</label>
@@ -190,7 +189,7 @@
       <p>22. Which of the following is a valid JavaScript array?</p>
       <label><input type="radio" name="q22" value="A"> var arr = 1, 2, 3, 4;</label>
       <label><input type="radio" name="q22" value="B"> var arr = (1, 2, 3, 4);</label>
-      <label><input type="radio" name="q22" value="C"> var arr = [1, 2, 3, 4];</label>
+      <label><input type="radio" name="q22" value="C"> var arr = [1, 2, 3, 4];</label> <!--Correct-->
       <label><input type="radio" name="q22" value="D"> var arr = "1, 2, 3, 4";</label>
     </div>
 
@@ -225,7 +224,8 @@
     <button type="button" id="submitButton" onclick="submitQuiz()">Submit Quiz</button>
 </form>
 <div id="result"></div>
-<script src="quiz.js"></script>
+<script src="quiz.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
 
   <footer>
     <h4>
